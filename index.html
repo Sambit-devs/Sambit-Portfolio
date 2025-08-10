@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the modern 3D portfolio of Sambit Kumar Panda, a proficient Java Developer with expertise in AWS, cloud computing, and cutting-edge web technologies." />
+    <meta name="keywords" content="Sambit Kumar Panda, Java Developer, AWS, Cloud Computing, Portfolio, Software Engineer, React, Three.js, 3D Portfolio" />
+    <meta name="author" content="Sambit Kumar Panda" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sambit-kumar-panda-portfolio.netlify.app/" />
+    <meta property="og:title" content="Sambit Kumar Panda - Modern 3D Portfolio" />
+    <meta property="og:description" content="Experience an innovative 3D portfolio showcasing Java development and cloud computing expertise." />
+    <meta property="og:image" content="/assets/Sam's pic.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sambit-kumar-panda-portfolio.netlify.app/" />
+    <meta property="twitter:title" content="Sambit Kumar Panda - Modern 3D Portfolio" />
+    <meta property="twitter:description" content="Experience an innovative 3D portfolio showcasing Java development and cloud computing expertise." />
+    <meta property="twitter:image" content="/assets/Sam's pic.jpg" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" href="/assets/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <title>Sambit Kumar Panda - Modern 3D Portfolio | Java Developer</title>
+    
+    <style>
+      /* Hide scrollbar but keep functionality */
+      html {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+      }
+      html::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+      }
+      
+      /* Loading animation */
+      #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a0a0a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading">
+      <div style="color: #667eea; font-size: 2rem; font-weight: bold;">SK</div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Hide loading screen when page loads
+      window.addEventListener('load', () => {
+        const loading = document.getElementById('loading');
+        if (loading) {
+          loading.style.opacity = '0';
+          setTimeout(() => loading.remove(), 500);
+        }
+      });
+    </script>
+  </body>
+</html>
