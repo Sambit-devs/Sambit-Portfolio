@@ -7,10 +7,11 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "C++", level: 85 },
+        { name: "Java", level: 75 },
+        { name: "C++", level: 65 },
         { name: "SQL", level: 80 },
-        { name: "Python", level: 70 }
+        { name: "HTML", level: 75 },
+        { name: "CSS", level: 65 }
       ],
       icon: "💻",
       color: "#667eea"
@@ -18,10 +19,11 @@ const Skills = () => {
     {
       title: "Cloud Platforms",
       skills: [
-        { name: "AWS", level: 85 },
+        { name: "AWS", level: 60 },
         { name: "Azure", level: 80 },
-        { name: "Docker", level: 75 },
-        { name: "Kubernetes", level: 65 }
+        { name: "GIT", level: 90 },
+        { name: "GITHUB", level: 90 },
+        { name: "OOP", level: 90 }
       ],
       icon: "☁️",
       color: "#764ba2"

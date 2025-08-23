@@ -6,21 +6,21 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Modern 3D Portfolio",
-      description: "A cutting-edge portfolio website built with React Three Fiber, featuring interactive 3D elements and smooth animations.",
+      title: "Personal Portfolio",
+      description: "A simple portfolio website built with HTML & CSS for faster loading speeds.",
       image: "/assets/Screenshot from 2025-01-13 12-34-30.png",
-      tech: ["React", "Three.js", "Framer Motion"],
+      tech: ["HTML", "CSS", "GIT", "GITHUB", "Netlify"],
       github: "https://github.com/Sambit-devs/Projects",
       demo: "https://sambit-kumar-panda-portfolio.netlify.app/"
     },
     {
       id: 2,
-      title: "Flappy Bird Java Game",
+      title: "Flappy Bird Game",
       description: "A desktop recreation of the classic Flappy Bird game built in Java with Swing.",
       image: "/assets/img.png",
-      tech: ["Java", "Swing", "OOP"],
+      tech: ["Java", "GIT", "GITHUB", "JLayer", "Launch4J", "MongoDB", "Maven", "Swing", "OOP"],
       github: "https://github.com/Sambit-devs/Flappy-Bird",
-      demo: "#"
+      demo: "https://github.com/Sambit-devs/Flappy-Bird/releases/download/v1.0/FlappyBird-Windows.zip"
     }
   ]
 

@@ -133,7 +133,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <h4>⚡ Response</h4>
-                <p>Usually within 24 hours</p>
+                <p>Within 24 hours</p>
               </div>
             </div>
 
