@@ -6,6 +6,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Modern Portfolio",
+      description: "A modern and responsive portfolio website built with React, Three.js for interactive animations, immersive UI.",
+      image: "/assets/Screenshot from 2025-08-23 14-17-38.png",
+      tech: ["AI", "React", "Netlify", "Vite", "Three.js", "Framer Motion", "GSAP", "Lenis", "React Router DOM", "EmailJS", "ESLint", "Parallax Tilt, Intersection Observer"],
+      github: "https://github.com/Sambit-devs/Projects",
+      demo: "https://sambit-kumar-panda-portfolio.netlify.app/"
+    },
+    {
+      id: 2,
       title: "Personal Portfolio",
       description: "A simple portfolio website built with HTML & CSS for faster loading speeds.",
       image: "/assets/Screenshot from 2025-01-13 12-34-30.png",
@@ -14,7 +23,7 @@ const Projects = () => {
       demo: "https://sambit-kumar-panda-portfolio.netlify.app/"
     },
     {
-      id: 2,
+      id: 3,
       title: "Flappy Bird Game",
       description: "A desktop recreation of the classic Flappy Bird game built in Java with Swing.",
       image: "/assets/img.png",
