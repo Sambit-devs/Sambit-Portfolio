@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
 import { motion } from 'framer-motion'
 import './Contact.css'
 
@@ -17,11 +18,26 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I\'ll get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
+    e.preventDefault();
+    emailjs.send(
+      'service_hgk77nq',
+      'template_77d0axw',
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      'l-HeXXswblyeTQ6Bv'
+    )
+    .then(
+      (result) => {
+        alert('Thank you for your message! I\'ll get back to you soon.');
+        setFormData({ name: '', email: '', message: '' });
+      },
+      (error) => {
+        alert('Sorry, there was an error sending your message. Please try again later.');
+      }
+    );
   }
 
   const socialLinks = [
