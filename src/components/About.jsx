@@ -24,7 +24,7 @@ const About = () => {
           viewport={{ once: true }}
         >
           <p>
-            I am a dedicated <strong className="gradient-text">Java Developer</strong> with 
+            I am a dedicated <strong className="gradient-text">Java - Cloud Developer</strong> with 
             a strong focus on building efficient, clean, and optimized applications. 
             Currently pursuing my final year in Computer Science Engineering, I bring 
             both academic knowledge and practical experience to every project.
@@ -33,19 +33,19 @@ const About = () => {
           <div className="skills-grid">
             <div className="skill-item">
               <h4>💻 Programming</h4>
-              <p>Java, C++, SQL, DSA, OOP</p>
+              <p>Java, C++, SQL,<br></br> DSA, OOP</p>
             </div>
             <div className="skill-item">
               <h4>☁️ Cloud Platforms</h4>
-              <p>AWS, Azure, Docker</p>
+              <p>AWS, Azure</p>
             </div>
             <div className="skill-item">
               <h4>🛠️ Tools</h4>
-              <p>VS Code, IntelliJ, Git, MongoDB</p>
+              <p>VS Code, IntelliJ,<br></br> Git, Github, MongoDB</p>
             </div>
             <div className="skill-item">
               <h4>🌐 Web Tech</h4>
-              <p>HTML, CSS, React, Node.js</p>
+              <p>HTML, CSS</p>
             </div>
           </div>
         </motion.div>

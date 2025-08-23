@@ -167,23 +167,6 @@ const Hero = () => {
             </motion.div>
           </motion.div>
         </div>
-        
-        {/* Scroll indicator */}
-        <motion.div
-          className="scroll-indicator"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2 }}
-        >
-          <motion.div
-            className="scroll-icon"
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            ↓
-          </motion.div>
-          <p>Scroll to explore</p>
-        </motion.div>
       </div>
       
       {/* Background effects */}
