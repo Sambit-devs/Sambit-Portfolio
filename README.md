@@ -3,7 +3,6 @@
 A cutting-edge, interactive 3D portfolio website built with React, Three.js, and modern web technologies. This portfolio showcases advanced web development skills through immersive 3D experiences, smooth animations, and responsive design.
 
 ![Portfolio Preview](public/assets/Screenshot from 2025-08-23 14-17-38.png)
-
 ## ✨ Features
 
 ### 🎭 Interactive 3D Elements
