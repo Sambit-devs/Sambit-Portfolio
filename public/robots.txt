@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sambit-kumar-panda-portfolio.netlify.app/sitemap.xml
