@@ -25,10 +25,17 @@ const Navbar = () => {
 
   const handleNavClick = (href) => {
     setIsOpen(false)
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
+    // Add slight delay to allow menu to close before scrolling
+    setTimeout(() => {
+      const element = document.querySelector(href)
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest'
+        })
+      }
+    }, 300) // Matches menu close animation duration
   }
 
   return (

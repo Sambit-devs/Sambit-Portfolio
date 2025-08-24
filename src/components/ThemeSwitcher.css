@@ -3,7 +3,7 @@
   top: 50%;
   right: 2rem;
   transform: translateY(-50%);
-  z-index: 1001;
+  z-index: 2000;
 }
 
 .theme-button {
@@ -32,17 +32,19 @@
 }
 
 .theme-panel {
-  position: absolute;
-  right: 80px;
+  position: fixed;
+  right: 90px; /* Account for button width + spacing */
   top: 50%;
   transform: translateY(-50%);
   width: 320px;
+  max-width: calc(100vw - 100px);
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  z-index: 2001;
 }
 
 .theme-panel-header {
@@ -185,26 +187,34 @@
 @media (max-width: 768px) {
   .theme-switcher {
     right: 1rem;
+    top: auto;
+    bottom: 1.5rem;
+    left: auto;
+    transform: none;
+    z-index: 2001;
   }
-  
   .theme-button {
     width: 50px;
     height: 50px;
   }
-  
   .theme-icon {
     font-size: 1.5rem;
   }
-  
-  .theme-panel {
-    right: 70px;
-    width: 280px;
-  }
-  
+.theme-panel {
+  right: 0;
+  left: 0;
+  top: auto;
+  bottom: 100px;
+  margin: 0 auto;
+  width: 90vw;
+  min-width: 0;
+  max-width: 400px;
+  border-radius: 16px;
+  transform: none;
+}
   .theme-panel-header {
     padding: 1rem;
   }
-  
   .theme-option {
     padding: 0.8rem;
   }
@@ -213,14 +223,18 @@
 @media (max-width: 480px) {
   .theme-switcher {
     right: 0.5rem;
+    bottom: 1rem;
   }
-  
-  .theme-panel {
-    right: 60px;
-    width: 250px;
-    max-height: 70vh;
-  }
-  
+.theme-panel {
+  width: 94vw;
+  max-width: 94vw;
+  left: 3vw;
+  right: 3vw;
+  min-width: 0;
+  max-height: 60vh;
+  border-radius: 12px;
+  bottom: 90px;
+}
   .theme-options {
     max-height: 300px;
   }
